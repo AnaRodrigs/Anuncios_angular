@@ -8,6 +8,8 @@ import { VendedorComponent } from './vendedor/vendedor.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,13 +17,14 @@ import { HomeComponent } from './home/home.component';
     GaragemComponent,
     VendedorComponent,
     HeaderComponent,
-    HomeComponent
-  ],
+    HomeComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,5 +4,6 @@ export interface Vendedor {
     descricao: string; 
     preco: number;
     validade: Date;
-    status: string;
+    opcaoSelecionada: string;
+    image: string;
 }

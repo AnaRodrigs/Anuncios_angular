@@ -1,6 +1,14 @@
-{ 
-"carros":[
-
-]
-  
+{
+  "carros": [
+    {
+      "id": 1,
+      "name": "",
+      "preco": "a",
+      "descricao": "a",
+      "validade": "4222-03-12",
+      "isChecked": true,
+      "image": "",
+      "opcaoSelecionada": "Disponivel"
+    }
+  ]
 }
