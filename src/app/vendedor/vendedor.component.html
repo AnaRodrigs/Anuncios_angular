@@ -10,8 +10,8 @@
             </div>
 
             <div class="input-group mb-3">
-              <span class="input-group-text" id="vendedor">Título do Carro</span>
-              <input type="text"  id="vendedor" formControlName="vendedor" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <span class="input-group-text" id="titulo">Título do Carro</span>
+              <input type="text"  id="titulo" formControlName="titulo" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
           
             <div class="input-group mb-3">
@@ -80,7 +80,7 @@
                     <td>{{vendedor.preco}}</td>
                     <td>{{vendedor.validade}}</td>
                     <td *ngIf="vendedor.opcaoSelecionada">{{vendedor.opcaoSelecionada}}</td>
-                    <img src="{{vendedor.image}}" alt="">
+                    
 
                     <td>
                       <button class="btn btn-primary me-1" (click)="edit(vendedor)">Editar</button>

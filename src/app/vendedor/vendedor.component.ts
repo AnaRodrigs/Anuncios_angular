@@ -19,7 +19,7 @@ export class VendedorComponent {
     private formBuilder: FormBuilder) {
     this.formGroupClient = formBuilder.group({
       id: [''],
-      name: [''],
+      titulo: [''],
       preco: [''],
       descricao: [''],
       validade: [''],
