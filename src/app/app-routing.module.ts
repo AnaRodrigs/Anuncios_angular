@@ -6,6 +6,7 @@ import { VendedorComponent } from './vendedor/vendedor.component';
 const routes: Routes = [
 {path: 'garagem', component: GaragemComponent},
 {path: 'vendedor', component: VendedorComponent},
+
 ];
 
 

@@ -17,7 +17,8 @@ import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
     GaragemComponent,
     VendedorComponent,
     HeaderComponent,
-    HomeComponent  ],
+    HomeComponent,
+      ],
   imports: [
     BrowserModule,
     AppRoutingModule,

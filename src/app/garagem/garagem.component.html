@@ -16,12 +16,16 @@
                   <td>{{ vendedor.validade }}</td>
                 </tr>
                 <tr>
+                  <th scope="row">Condições</th>
+                  <td>{{ vendedor.descricao }}</td>
+                </tr>
+                <tr>
                   <th scope="row">Status</th>
                   <td *ngIf="vendedor.opcaoSelecionada">{{ vendedor.opcaoSelecionada }}</td>
                 </tr>
               </tbody>
             </table>
-            <a href="#" class="btn btn-primary">Saiba mais </a>
+            <a href="#home" class="btn btn-success">Saiba mais </a>
           </div>
         </div>
       </div>

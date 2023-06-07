@@ -5,7 +5,7 @@
         <form [formGroup] = "formGroupClient">
             <div class="mb-2">
               <div class="display-6"> 
-                Anúncios de Carros
+                Crie o seu anúncio
               </div>
             </div>
 
@@ -54,23 +54,26 @@
               <input type="checkbox" formControlName="isChecked" (change)="doSomething()"> <label> Deseja compartilhar todas essas informações conosco ?</label>
             </div>
       
-              <div class="mb-3 d-flex justify-content-end">
-                <button class="btn btn-primary me-2" (click)="save ()"> salvar</button>
-                <button class="btn btn-primary" (click)="clean() ">Limpar</button>
+              <div class="mb-3 mt-3 text-center  " >
+                <button class="btn btn-warning text-light me-2" style="width: 25%;" (click)="save ()"> salvar</button>
+                <button class="btn btn-success text-light" (click)="clean() ">Limpar</button>
               
               </div>
-
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Título</th>
-                    <th scope="col">Descrição</th>
-                    <th scope="col">Preço</th>
-                    <th scope="col">Validade</th>
-                    <th scope="col">Status </th>
-                  </tr>
-                </thead>
+              <div class="text-center mt-5" >
+                <h2> Carros Cadastrados</h2>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Título</th>
+                      <th scope="col">Descrição</th>
+                      <th scope="col">Preço</th>
+                      <th scope="col">Validade</th>
+                      <th scope="col">Status </th>
+                    </tr>
+                  </thead>
+             
+             
 
                 <tbody>
                   <tr *ngFor = "let vendedor of vendedor ">
@@ -83,13 +86,15 @@
                     
 
                     <td>
-                      <button class="btn btn-primary me-1" (click)="edit(vendedor)">Editar</button>
-                      <button class="btn btn-primary" (click)="delete(vendedor)">Excluir</button>
+                      <button class="btn btn-light me-1" (click)="edit(vendedor)">Editar</button>
+                      <button class="btn btn-secondary" (click)="delete(vendedor)">Excluir</button>
                     </td>
                   </tr>
                 </tbody>
               </table>
-          </form>
+            </div>
+            </form>
+          
         </div>
     </div>
 
